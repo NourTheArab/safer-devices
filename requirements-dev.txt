@@ -1,0 +1,3 @@
+# Optional documentation preview and artwork tools, never a device audit.
+markdown-it-py>=3,<5
+Pillow>=11,<13
