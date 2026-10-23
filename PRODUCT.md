@@ -16,7 +16,7 @@ A shareable public GitHub guide with a useful first checklist, deeper guides, co
 
 ## Capabilities and Constraints
 
-This is educational documentation, not a scanner, installer or incident-response service. Preserve privacy, recovery options, narrow approvals and the distinction between verified and unknown results. Never include private device-audit data.
+This is educational documentation with a scoped, opt-in read-only TLS probe, not an automatic hardening installer or incident-response service. Preserve privacy, recovery options, narrow approvals and the distinction between verified and unknown results. Never include private device-audit data.
 
 The owner approved public GitHub publication on 23 October 2026. The reading preview remains a local development tool. GitHub controls README typography and page layout; custom visual assets must work within those limits.
 

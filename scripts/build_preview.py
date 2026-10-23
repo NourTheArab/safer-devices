@@ -14,7 +14,7 @@ MARKDOWN = MarkdownIt("commonmark", {"html": True}).enable("table")
 ARROW = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>'
 CHEVRON = '<svg class="chevron" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m6 9 6 6 6-6"/></svg>'
 MARK = '<svg viewBox="0 0 42 46" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 41V21a16 16 0 0 1 32 0v20M12 41V22a9 9 0 0 1 18 0v19M21 13v28M5 30h32M2 41h38"/></svg>'
-PAIRS = {"README.md": "README.ar.md", **{f"guides/{name}.md": f"ar/{name}.md" for name in ("accounts", "browsers", "mac", "windows", "phones", "developers", "getting-help", "why-this-matters")}, "prompts/AGENT-AUDIT.md": "ar/agent-audit.md", "prompts/APPROVE-ONE-CHANGE.md": "ar/approve-one-change.md", "sources/README.md": "ar/sources.md"}
+PAIRS = {"README.md": "README.ar.md", **{f"guides/{name}.md": f"ar/{name}.md" for name in ("accounts", "browsers", "mac", "windows", "phones", "developers", "getting-help", "why-this-matters", "practical-audit", "incident-checks", "repairs", "chat-only", "agent-verification", "ipad")}, "prompts/AGENT-AUDIT.md": "ar/agent-audit.md", "prompts/APPROVE-ONE-CHANGE.md": "ar/approve-one-change.md", "sources/README.md": "ar/sources.md", "sources/INCIDENT-REVIEW.md": "ar/incident-review.md", "checks/README.md": "ar/tls-probe.md", "checks/VALIDATION.md": "ar/probe-validation.md"}
 TWINS = {**PAIRS, **{value: key for key, value in PAIRS.items()}}
 
 
@@ -123,15 +123,15 @@ def home_page(arabic):
         description = "خطوات عملية لحماية الأجهزة والحسابات، بشكل مباشر أو بمساعدة أدوات ذكية. البداية بالأساسيات، والتغيير بعد فهم الأثر والموافقة عليه."
         aside = 'A little more<br>secure.'
         note = "دليل للأصدقاء والعائلة، بلا برامج تثبيت تلقائية أو وعود بأمان مطلق."
-        start, agent = "البداية بالفحوص", "نص لأداة المساعدة"
+        start, agent = "البداية بالفحص العملي", "نص لأداة المساعدة"
         checks_title, checks_note = "ستة فحوص للبداية", "كل بند يوضّح علامة الإنجاز."
         concern = '<strong>عند الشك في اختراق:</strong> <a href="/ar/getting-help.html">طلب المساعدة أولًا</a>. التنظيف قد يزيل أدلة مهمة.'
         agent_title, agent_description = "مساعدة ذكية، بصلاحيات واضحة.", "تعليمات تبدأ بالقراءة فقط، وتحافظ على كلمات المرور والمحافظ، وتتطلب موافقة محددة قبل أي تغيير."
         fine = "النص نقطة بداية للمساعدة، وليس تفويضًا مطلقًا. غياب الوصول يعني توضيح الحدّ، لا تجاوز الحماية."
         prompt_label, full = "نص جاهز للنسخ", "التعليمات الكاملة"
         guide_title = "الدليل المناسب لكل خطوة"
-        guide_names = ["الحسابات", "المتصفحات", "ماك", "ويندوز", "الهواتف", "أدوات التطوير", "طلب المساعدة", "حوادث حديثة، بشرح واضح"]
-        guide_descriptions = ["البريد والمصادقة والجلسات", "الإضافات وصلاحيات المواقع", "التحديث والتشفير والمشاركة", "الحماية والنسخ والاسترداد", "التحديث والصلاحيات والاسترداد", "بيئات التشغيل والحاويات", "الاختراق المحتمل والاستهداف", "الأثر الأوسع والذكاء الاصطناعي والاستعداد"]
+        guide_names = ["الحسابات", "المتصفحات", "ماك", "ويندوز", "الهواتف", "أدوات التطوير", "طلب المساعدة", "حوادث حديثة، بشرح واضح", "الفحص العملي", "فحوص الحوادث", "الإصلاح والتحقق", "المحادثة فقط", "مراجعة عمل الأداة", "آيباد"]
+        guide_descriptions = ["البريد والمصادقة والجلسات", "الإضافات وصلاحيات المواقع", "التحديث والتشفير والمشاركة", "الحماية والنسخ والاسترداد", "التحديث والصلاحيات والاسترداد", "بيئات التشغيل والحاويات", "الاختراق المحتمل والاستهداف", "الأثر الأوسع والذكاء الاصطناعي والاستعداد", "أوامر وتغطية وأدلة", "الشهادات والبيئات والتنبيهات", "تغيير بموافقة وإعادة فحص", "خطوات يدوية بلا ادعاء مسح", "سيناريوهات القبول والفجوات", "إعدادات iPadOS خطوة بخطوة"]
         source_heading, source_description = "المصادر قبل الأدوات.", "التوثيق الرسمي هو المرجع، والأدوات اختيارية. نطاق كل فحص وحدوده مهمان بقدر نتيجته."
         limits_heading, limits_description = "ما تم التحقق منه. وما بقي مجهولًا.", "نتيجة فحص واحدة لا تثبت أن الجهاز لم يُخترق. تحديثات مكتملة وصلاحيات أقل ونسخ قابلة للاستعادة تقلل المخاطر، من دون وعود بأمان مطلق."
         source_link, date = "المصادر والأدوات وحدودها", "مراجعة المصادر: 23 تشرين الأول 2026"
@@ -140,15 +140,15 @@ def home_page(arabic):
         description = "Practical security for your devices and accounts. Follow the checks yourself, or give your agent clear instructions and keep control of every change."
         aside = 'أمان رقمي،<br>بخطوات واضحة.'
         note = "For friends, families and the agents helping them. No automatic fixes. No promises of perfect safety."
-        start, agent = "Start with the checks", "Give this to your agent"
+        start, agent = "Run the practical audit", "Give this to your agent"
         checks_title, checks_note = "Your first six checks", "Open any check to see what finished means."
         concern = '<strong>Already worried about a compromise?</strong> <a href="/guides/getting-help.html">Start with getting help</a>. Cleanup can remove evidence.'
         agent_title, agent_description = "A helpful agent. Clear boundaries.", "A copyable request that starts read-only, protects your passwords and wallets, and asks before making changes."
         fine = "This prompt sets a scope. It doesn't grant unrestricted access. An unavailable check stays unknown."
         prompt_label, full = "Copyable starting prompt", "Read the full agent instructions"
         guide_title = "A guide for each next step"
-        guide_names = ["Accounts", "Browsers", "Mac", "Windows", "Phones", "Developer tools", "Getting help", "Recent incidents, explained"]
-        guide_descriptions = ["Email, MFA and signed-in sessions", "Extensions and website permissions", "Updates, encryption and sharing", "Protection, backups and recovery", "Updates, permissions and recovery", "Runtimes, agents and containers", "Account takeover and targeted concerns", "Wider impact, AI and preparation"]
+        guide_names = ["Accounts", "Browsers", "Mac", "Windows", "Phones", "Developer tools", "Getting help", "Recent incidents, explained", "Practical audit", "Incident checks", "Repairs and retests", "Chat-only walkthrough", "Check the agent", "iPad"]
+        guide_descriptions = ["Email, MFA and signed-in sessions", "Extensions and website permissions", "Updates, encryption and sharing", "Protection, backups and recovery", "Updates, permissions and recovery", "Runtimes, agents and containers", "Account takeover and targeted concerns", "Wider impact, AI and preparation", "Concrete commands, coverage and evidence", "Certificate probes, runtimes and advisories", "One approved change, verified", "Manual steps when device tools are absent", "Acceptance scenarios and limits", "iPadOS settings, one step at a time"]
         source_heading, source_description = "Sources before tools.", "Start with official guidance. Optional tools have a purpose, a scope and limits. Understand those before approving a download or fix."
         limits_heading, limits_description = "Verified where checked. Honest everywhere else.", "One clean scan doesn't establish that a device was never compromised. Finished updates, fewer unnecessary permissions and recoverable backups reduce risk. Unknowns stay visible."
         source_link, date = "Explore sources, tools and their limits", "Sources reviewed: 23 October 2026"
@@ -156,10 +156,15 @@ def home_page(arabic):
     context_url = href("ar/why-this-matters.md" if arabic else "guides/why-this-matters.md")
     context_label = "حوادث حديثة، بشرح واضح" if arabic else "Recent incidents, explained"
     concern += f' <a href="{context_url}">{context_label}</a>.'
+    practical_url = href("ar/practical-audit.md" if arabic else "guides/practical-audit.md")
+    practical_label = "الفحص العملي وفحوص الحوادث" if arabic else "Practical audit and incident checks"
+    concern += f' <a href="{practical_url}">{practical_label}</a>.'
     checks = "".join(f'<details class="check-row"><summary><span class="check-name">{escape(label)}</span><span class="check-description">{escape(step)}</span>{CHEVRON}</summary><div class="check-body"><span class="finish-label">{text["verify"]}</span><p>{escape(finish)}</p></div></details>' for label, step, finish in checklist_rows(content))
-    slugs = ("accounts", "browsers", "mac", "windows", "phones", "developers", "getting-help", "why-this-matters")
+    slugs = ("accounts", "browsers", "mac", "windows", "phones", "developers", "getting-help", "why-this-matters", "practical-audit", "incident-checks", "repairs", "chat-only", "agent-verification", "ipad")
+    if not len(slugs) == len(guide_names) == len(guide_descriptions):
+        raise ValueError("Guide labels and routes must match in both languages")
     guides = "".join(f'<a class="guide-link" href="{href(("ar/" if arabic else "guides/") + slug + ".md")}"><div><strong>{title}</strong><span>{description}</span></div>{ARROW}</a>' for slug, title, description in zip(slugs, guide_names, guide_descriptions))
-    body = f'''<main id="main"><section class="hero"><div><h1>{heading}</h1><p>{description}</p><div class="actions"><a class="primary" href="#start-here">{start}{ARROW}</a><a class="text-link" href="#agent">{agent}</a></div></div><aside class="hero-aside"><div class="arabic-plate" lang="{"en" if arabic else "ar"}" dir="{"ltr" if arabic else "rtl"}">{aside}</div><div class="aside-note"><div class="tiny-rule"></div><p>{note}</p></div></aside></section><div class="concern">{concern}</div><section class="section" id="start-here"><div class="section-head"><h2>{checks_title}</h2><p>{checks_note}</p></div><div class="checklist">{checks}</div></section><section class="section" id="agent"><div class="agent-grid"><div class="agent-intro"><h2>{agent_title}</h2><p>{agent_description}</p><p class="fine">{fine}</p><a href="{links["agent"]}">{full}</a></div><div><div class="prompt-wrap"><div class="prompt-toolbar"><span>{prompt_label}</span><button class="copy" data-copy aria-describedby="copy-status">{text["copy"]}</button></div><pre id="audit-prompt">{escape(prompt)}</pre></div><p class="copy-status" id="copy-status" role="status" aria-live="polite"></p></div></div></section><section class="section" id="guides"><div class="section-head"><h2>{guide_title}</h2></div><div class="guide-grid">{guides}</div></section><section class="section"><div class="sources-grid"><div><h2>{source_heading}</h2><p>{source_description}</p><div class="source-links"><a href="https://ssd.eff.org/module/your-security-plan">EFF</a><a href="https://github.com/deimos-hq/wardlatch">Wardlatch</a><a href="https://github.com/djadmin/fort">fort</a><a href="https://github.com/dominikmartn/black-october-check">Dom’s checklist</a></div><p><a href="{links["sources"]}">{source_link}</a></p></div><div><h2>{limits_heading}</h2><p>{limits_description}</p><p class="quiet-note">{date}</p></div></div></section></main>'''
+    body = f'''<main id="main"><section class="hero"><div><h1>{heading}</h1><p>{description}</p><div class="actions"><a class="primary" href="{practical_url}">{start}{ARROW}</a><a class="text-link" href="#agent">{agent}</a></div></div><aside class="hero-aside"><div class="arabic-plate" lang="{"en" if arabic else "ar"}" dir="{"ltr" if arabic else "rtl"}">{aside}</div><div class="aside-note"><div class="tiny-rule"></div><p>{note}</p></div></aside></section><div class="concern">{concern}</div><section class="section" id="start-here"><div class="section-head"><h2>{checks_title}</h2><p>{checks_note}</p></div><div class="checklist">{checks}</div></section><section class="section" id="agent"><div class="agent-grid"><div class="agent-intro"><h2>{agent_title}</h2><p>{agent_description}</p><p class="fine">{fine}</p><a href="{links["agent"]}">{full}</a></div><div><div class="prompt-wrap"><div class="prompt-toolbar"><span>{prompt_label}</span><button class="copy" data-copy aria-describedby="copy-status">{text["copy"]}</button></div><pre id="audit-prompt">{escape(prompt)}</pre></div><p class="copy-status" id="copy-status" role="status" aria-live="polite"></p></div></div></section><section class="section" id="guides"><div class="section-head"><h2>{guide_title}</h2></div><div class="guide-grid">{guides}</div></section><section class="section"><div class="sources-grid"><div><h2>{source_heading}</h2><p>{source_description}</p><div class="source-links"><a href="https://ssd.eff.org/module/your-security-plan">EFF</a><a href="https://github.com/deimos-hq/wardlatch">Wardlatch</a><a href="https://github.com/djadmin/fort">fort</a><a href="https://github.com/dominikmartn/black-october-check">Dom’s checklist</a></div><p><a href="{links["sources"]}">{source_link}</a></p></div><div><h2>{limits_heading}</h2><p>{limits_description}</p><p class="quiet-note">{date}</p></div></div></section></main>'''
     return frame(body, name, text["name"])
 
 
@@ -168,6 +173,7 @@ def main():
     shutil.copytree(ROOT / "assets", OUT / "assets", dirs_exist_ok=True)
     shutil.copytree(ROOT / "site", OUT / "site", dirs_exist_ok=True)
     shutil.copytree(ROOT / "scripts", OUT / "scripts", dirs_exist_ok=True, ignore=shutil.ignore_patterns("__pycache__"))
+    shutil.copytree(ROOT / "checks", OUT / "checks", dirs_exist_ok=True, ignore=shutil.ignore_patterns("__pycache__"))
     shutil.copy2(ROOT / "requirements-dev.txt", OUT / "requirements-dev.txt")
     documents = [path for path in ROOT.rglob("*.md") if not {".private", ".git", ".impeccable", "__pycache__"}.intersection(path.relative_to(ROOT).parts)]
     for path in documents:

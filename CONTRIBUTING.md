@@ -44,3 +44,7 @@ The preview is written to the ignored `.private/preview` directory. If serving i
 ## Reporting a problem
 
 For a general documentation error, open an issue without device/account details. Follow [SECURITY.md](SECURITY.md) for sensitive concerns. Don't upload raw logs or screenshots of security settings.
+
+## Diagnostic helper changes
+
+Keep helpers opt-in and read-only. Add offline tests for control failures, unknown results, timeouts and output privacy before adding client support. Update both language runbooks, the source-review queue and the dated validation record. The documented commands need review for the actual platform; passing document checks alone is insufficient.

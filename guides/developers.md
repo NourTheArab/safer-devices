@@ -2,7 +2,7 @@
 
 [العربية](../ar/developers.md)
 
-Skip this guide if you don't use these tools. Ask for a scoped review if you run coding agents, package managers, local servers, or containers.
+App-bundled runtime checks in the practical audit apply even if you don't code. Skip only the project/container sections that don't apply. Ask for a scoped review if you run coding agents, package managers, local servers, or containers.
 
 ## Separate the copies you actually use
 

@@ -4,6 +4,8 @@
 
 Reviewed **23 October 2026**. Follow the current vendor page for your device and release. A source appearing here doesn't mean its software has been independently audited or that every recommendation fits your situation.
 
+For each practical audit, use [the required incident/source review](INCIDENT-REVIEW.md), then [the concrete checks](../guides/incident-checks.md). Source review and device verification are separate results.
+
 ## Start with these
 
 | Source | Useful for |
@@ -44,6 +46,7 @@ Read the project's current documentation and inspect the exact release/source be
 | Project | Scope and useful limits |
 |---|---|
 | [Wardlatch](https://github.com/deimos-hq/wardlatch) | Incident-specific checks, including runtime TLS probes. Its documentation currently targets macOS/Linux and says Windows checks are incomplete/unsupported. Probes contact public hosts; default container discovery can reach the active engine, including a remote context. Review the current `--no-containers` option for a local-only scope. A result covers only the tested incident and components. |
+| [emudhra-check](https://github.com/wakumo/emudhra-check) | Alternative Mac certificate checker. Review its pinned source and network/log/Docker behavior before any execution. The reviewed README used twelve hosts; compare with the current advisory. No remote-shell pipe or broad fix mode is authorized by this guide. |
 | [fort](https://github.com/djadmin/fort) | macOS settings audit. The publisher describes the audit as local/offline, and documents a preview mode. Fix options can change system settings. Its reports may include machine identity and serial numbers; keep reports private. A score isn't a forensic or compliance certification. |
 | [LuLu](https://github.com/objective-see/LuLu) | An additional macOS firewall with app-connection controls. Installing it or changing rules needs a deliberate decision; blocking an app may break syncing, updates or other features. Read [the publisher's usage guide](https://objective-see.org/products/lulu.html). |
 | [Dom's Black October checklist](https://github.com/dominikmartn/black-october-check) | Technical checks and fixes for incidents current in October 2026. Inspiration for this guide, not a timeless list of safe versions. Individual fixes may need administrator access, service restarts or trust-store changes. Use fresh vendor advisories. [Original gist](https://gist.github.com/dominikmartn/629ef73b1ebca67a0d0d4938a932a371). |
