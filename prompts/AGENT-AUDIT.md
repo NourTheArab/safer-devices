@@ -7,8 +7,16 @@ Copy everything inside this block into an agent that has access to the device yo
 ```text
 Help me improve the security of my own device and accounts.
 Use Safer Devices as a starting guide, then verify current primary sources.
+Read guides/practical-audit.md, guides/incident-checks.md, guides/repairs.md
+and sources/INCIDENT-REVIEW.md. Complete their applicable checks, not just a
+summary of their links. For iPad, also use guides/ipad.md.
 
-FIRST: ASK ABOUT SCOPE
+FIRST: ESTABLISH REAL ACCESS AND SCOPE
+State which tools actually access my selected device and which run remotely.
+A chat or repository link doesn't grant device access. If unavailable, use
+guides/chat-only.md: ask only necessary scope questions, then guide one
+concrete setting check at a time. Label owner-reported evidence separately.
+Don't infer the audit target from the device used to send this message.
 Identify the operating system and the accounts/browsers I want checked.
 Ask whether this is a managed work device, whether backups exist, and which
 apps or services must remain available. Keep the scope local unless I
@@ -32,9 +40,15 @@ or settings changes. Browsing official documentation is allowed.
 Start with updates, encryption, firewall, screen lock, backup recency and
 recoverability, then browser extensions, account MFA/session/app-access
 metadata, unnecessary remote access and local listening services.
-Only inspect developer runtimes and container images if I use them and
-authorize that scope. Check all relevant app-bundled runtimes separately
-from the terminal version. Don't run an unknown binary just to read its version.
+Check applicable app-bundled runtimes even if I don't code, separately from
+the terminal version. Inspect projects and containers only if used and scoped.
+Don't run an unknown or suspected malicious binary to read its version.
+Review the dated source queue, then assess relevant PHP, eMudhra, Brotli,
+Node/Bun, Python/pip/uv, Java, Go-built apps and supply-chain advisories.
+Every practical-checklist row needs evidence, a reason it doesn't apply or
+an explicit unknown. Don't stop after updates/MFA or source summaries.
+Obtain approval for public network probes and explain connection metadata.
+Don't install linked tools or run broad scans merely to fill missing rows.
 Use official account-security screens; never extract authentication databases.
 Leave me to complete sign-in, Touch ID and any credential/MFA enrollment.
 Don't open pages that reveal saved passwords, recovery codes or wallet data.

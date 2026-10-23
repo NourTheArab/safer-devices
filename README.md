@@ -14,6 +14,12 @@ Understand the news: [recent incidents, explained](guides/why-this-matters.md). 
 
 **Already worried someone has access?** Start with [getting help](guides/getting-help.md). Routine cleanup can remove evidence that a specialist needs.
 
+## Practical audit for your agent
+
+For the hands-on path, read [the practical checklist](guides/practical-audit.md), [current incident checks](guides/incident-checks.md) and [one-change repairs](guides/repairs.md). They include concrete commands, expected results, runtime/certificate probes and verification. The [required source review](sources/INCIDENT-REVIEW.md) covers Dom’s checklist, Wardlatch and applicable vendor advisories, including PHP and eMudhra.
+
+**Using a phone chat?** [Start the guided walkthrough](guides/chat-only.md), or use the dedicated [iPad checklist](guides/ipad.md). A chat without device tools can guide settings checks; reading the repo doesn't grant device access.
+
 ## Start here
 
 | Check | What to do | What counts as finished |
@@ -35,7 +41,12 @@ Copy this message and include this repository's URL:
 
 ```text
 Help me improve my device and account security using Safer Devices.
-Read README.md and prompts/AGENT-AUDIT.md first.
+Read README.md, prompts/AGENT-AUDIT.md and guides/practical-audit.md first.
+Review sources/INCIDENT-REVIEW.md and perform applicable incident checks,
+including bundled app runtimes, PHP and certificate trust where relevant.
+State whether your tools actually access my device or a remote sandbox.
+If access is missing, use guides/chat-only.md and start one concrete check.
+Cover every practical-checklist row with evidence or an explicit gap.
 
 Start with a read-only audit. Show the evidence and say what you couldn't check.
 Keep my existing AI tools, password managers, wallets, and their data untouched.
@@ -55,6 +66,12 @@ An agent needs appropriate tools to inspect your device. If access is unavailabl
 
 | I want to... | Open |
 |---|---|
+| Run a practical audit with commands and a coverage report | [Practical audit](guides/practical-audit.md) |
+| Check PHP, eMudhra, bundled runtimes and current advisories | [Incident checks](guides/incident-checks.md) |
+| Work through settings in a chat without device access | [Guided walkthrough](guides/chat-only.md) |
+| Check an iPad | [iPad](guides/ipad.md) |
+| Review approved repairs and retests | [Repair playbook](guides/repairs.md) |
+| Check whether an agent actually followed the workflow | [Acceptance scenarios](guides/agent-verification.md) |
 | Secure email, check sessions, or enable MFA | [Accounts](guides/accounts.md) |
 | Understand extensions and their permissions | [Browsers](guides/browsers.md) |
 | Check my Mac | [Mac](guides/mac.md) |
@@ -73,7 +90,7 @@ An agent needs appropriate tools to inspect your device. If access is unavailabl
 - [fort](https://github.com/djadmin/fort): an optional macOS settings auditor. Review its current documentation and approve installation before using it.
 - [Dom's Black October checklist](https://github.com/dominikmartn/black-october-check): a dated, technical incident checklist that inspired this project. Check current vendor advisories before using its fixes.
 
-The [annotated source list](sources/README.md) explains scope and tradeoffs. Tools are optional; downloading or running one is a separate decision. This repository contains guidance and maintenance checks, with no device-fixing installer.
+The [annotated source list](sources/README.md) explains scope and tradeoffs. Tools are optional; downloading or running one is a separate decision. This repository contains guidance, maintenance checks and an opt-in read-only TLS probe, with no device-fixing installer.
 
 ## Reading your results
 

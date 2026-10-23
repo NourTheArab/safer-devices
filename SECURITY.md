@@ -14,4 +14,4 @@ Follow the affected provider's official recovery guidance. For civil-society and
 
 ## Scope
 
-The repository contains guidance and document-maintenance checks. Those checks do not audit a device or prove the absence of malware. Linked tools have their own security policies, release processes and licenses.
+The repository contains guidance, document-maintenance checks and an opt-in read-only TLS probe. The probe covers selected clients and public test chains only; it does not repair a device or prove the absence of malware. Maintenance checks validate the repository, not device security. Linked tools have their own security policies, release processes and licenses.

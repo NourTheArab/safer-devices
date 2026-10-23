@@ -12,4 +12,5 @@ This file governs contributions to this repository. For a user's device audit, u
 - Preserve the check, proposal, approval, change, verification sequence in all agent prompts.
 - Use ordinary paragraphs, useful checklists, and tables. Don't promise safety or imply that an OS, signature, scanner score, VPN, or closed port proves a clean device.
 - Use branches and pull requests. Keep CI permissions minimal and actions pinned to verified full commit hashes.
+- Diagnostic helpers must stay opt-in, read-only and narrowly scoped; test failure/control cases without network access. Never treat a timeout as certificate rejection.
 - Run `python3 scripts/check_docs.py` and `python3 -m unittest discover -s tests -v` before submitting.
