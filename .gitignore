@@ -1,0 +1,11 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+*.log
+local-reports/
+.private/
+.impeccable/review/
+.impeccable/mocks/
