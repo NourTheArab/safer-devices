@@ -18,6 +18,8 @@ Understand the news: [recent incidents, explained](guides/why-this-matters.md). 
 
 For the hands-on path, read [the practical checklist](guides/practical-audit.md), [current incident checks](guides/incident-checks.md) and [one-change repairs](guides/repairs.md). They include concrete commands, expected results, runtime/certificate probes and verification. The [required source review](sources/INCIDENT-REVIEW.md) covers Dom’s checklist, Wardlatch and applicable vendor advisories, including PHP and eMudhra.
 
+**Before an agent installs packages:** use [the dependency-safety workflow](guides/package-safety.md), with copyable project instructions, optional Socket checks and a no-Socket privacy choice. Scanner setup and installation each need approval.
+
 **Using a phone chat?** [Start the guided walkthrough](guides/chat-only.md), or use the dedicated [iPad checklist](guides/ipad.md). A chat without device tools can guide settings checks; reading the repo doesn't grant device access.
 
 ## Start here
@@ -44,6 +46,8 @@ Help me improve my device and account security using Safer Devices.
 Read README.md, prompts/AGENT-AUDIT.md and guides/practical-audit.md first.
 Review sources/INCIDENT-REVIEW.md and perform applicable incident checks,
 including bundled app runtimes, PHP and certificate trust where relevant.
+Before any dependency work, read guides/package-safety.md. Explain scanner
+privacy, review direct/indirect dependencies, and ask before setup or installs.
 State whether your tools actually access my device or a remote sandbox.
 If access is missing, use guides/chat-only.md and start one concrete check.
 Cover every practical-checklist row with evidence or an explicit gap.
@@ -77,6 +81,7 @@ An agent needs appropriate tools to inspect your device. If access is unavailabl
 | Check my Mac | [Mac](guides/mac.md) |
 | Check my Windows laptop | [Windows](guides/windows.md) |
 | Check my phone | [Phones](guides/phones.md) |
+| Review packages before an agent installs them | [Dependency safety and Socket tradeoffs](guides/package-safety.md) |
 | Check coding agents, runtimes, servers, or containers | [Developer tools](guides/developers.md) |
 | Respond to a suspected account takeover or targeted attack | [Getting help](guides/getting-help.md) |
 | Find trustworthy documentation and optional tools | [Sources and tools](sources/README.md) |

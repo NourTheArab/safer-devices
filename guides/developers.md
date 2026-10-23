@@ -20,6 +20,10 @@ Don't automatically run force-upgrade commands, unknown binaries, remote install
 
 Store secrets outside the repository and use the service's supported credential mechanism. For a suspected leak, establish what was exposed and follow that provider's revocation/recovery guidance. Updating a compromised package doesn't undo credentials already stolen.
 
+## Before installing dependencies
+
+Use [the package-safety workflow](package-safety.md) for exact-version and indirect-dependency review, optional Socket checks, privacy choices, script suppression and verification. It includes a copyable project instruction. A prompt is not enforcement, and this guide does not install a firewall or change your existing agent configuration.
+
 ## Local services
 
 Inventory only the approved machine. Use process identities and ports without logging command arguments, environment values or private traffic. For a service used only on the laptop, consider a loopback binding after checking dependent clients. Neither a loopback binding nor a firewall makes vulnerable local code harmless.

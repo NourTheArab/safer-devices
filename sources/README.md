@@ -53,6 +53,8 @@ Read the project's current documentation and inspect the exact release/source be
 | [Docker Engine security](https://docs.docker.com/engine/security/) | Container/daemon isolation and configuration considerations. Inspect the actual deployment. |
 | [Colima](https://github.com/abiosoft/colima) | Local VM management for container runtimes. Starting an existing VM can restart its configured workloads. |
 
+For dependency installation, review [Socket Overview](https://docs.socket.dev/docs/socket-firewall-overview), [Free limits and telemetry](https://docs.socket.dev/docs/socket-firewall-free), [npm ci](https://docs.npmjs.com/cli/v11/commands/npm-ci/) and [lifecycle scripts](https://docs.npmjs.com/cli/v11/using-npm/scripts/), checked on **23 October 2026**. Follow [the practical package workflow](../guides/package-safety.md) before proposing setup. Socket is optional, its Free telemetry cannot be disabled, and instructions alone do not enforce filtering. No Socket software was installed or independently audited for this addition.
+
 Package runners such as `npx` may fetch and execute software. An apparently convenient one-liner is still an installation/execution decision. This guide intentionally doesn't include a remote-script installer.
 
 ## Incidents, impact and AI
