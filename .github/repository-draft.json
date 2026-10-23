@@ -1,0 +1,16 @@
+{
+  "status": "Owner-approved public GitHub publication, 23 October 2026.",
+  "name": "safer-devices",
+  "description": "Practical security for people and their agents. Clear checklists, private data, approval before changes. English + العربية.",
+  "topics": [
+    "digital-security",
+    "security-guide",
+    "privacy",
+    "arabic",
+    "macos",
+    "windows",
+    "ai-agents"
+  ],
+  "social_preview": "assets/social-preview.png",
+  "repository_url": "https://github.com/karam2022/safer-devices"
+}

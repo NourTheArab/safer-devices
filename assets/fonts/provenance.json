@@ -1,0 +1,42 @@
+[
+  {
+    "file": "Amiri-Regular.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/amiri/Amiri-Regular.ttf",
+    "git_blob_sha": "14dfa0d6c80db50460d23daa306a7ac92e74676f"
+  },
+  {
+    "file": "Amiri-Bold.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/amiri/Amiri-Bold.ttf",
+    "git_blob_sha": "017afa9adb8ce417b08796d22d9204569ad211c7"
+  },
+  {
+    "file": "amiri-OFL.txt",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/amiri/OFL.txt",
+    "git_blob_sha": "a6051797e5f1910347b586dc06d4c1130f00da28"
+  },
+  {
+    "file": "IBMPlexSansArabic-Regular.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexsansarabic/IBMPlexSansArabic-Regular.ttf",
+    "git_blob_sha": "e779068718b9801b809605b2bf3067121cce524c"
+  },
+  {
+    "file": "IBMPlexSansArabic-Medium.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexsansarabic/IBMPlexSansArabic-Medium.ttf",
+    "git_blob_sha": "e82313893b5b5b6af3e7429f5b798666f1e0b097"
+  },
+  {
+    "file": "ibmplexsansarabic-OFL.txt",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexsansarabic/OFL.txt",
+    "git_blob_sha": "c35c4c618fab33da8695177b3a6cefe0810b7b28"
+  },
+  {
+    "file": "Newsreader[opsz,wght].ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/newsreader/Newsreader%5Bopsz%2Cwght%5D.ttf",
+    "git_blob_sha": "ad4a9a8c44ec328c80b61c773f1ba02f6b5ed292"
+  },
+  {
+    "file": "newsreader-OFL.txt",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/newsreader/OFL.txt",
+    "git_blob_sha": "d2d4f407109e9c74b8ab502fc79b912408ab8e41"
+  }
+]

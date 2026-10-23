@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-23T17:13:08.452326+00:00",
+  "title": "Design System: Safer Devices",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "True Black",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Near Black",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "White Ink",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Reading Gray",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "mute": {
+        "role": "neutral",
+        "displayName": "Muted Gray",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule Gray",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "gold": {
+        "role": "primary",
+        "displayName": "Restrained Gold",
+        "tonalRamp": [
+          "oklch(15% 0.1 85)",
+          "oklch(26% 0.1 85)",
+          "oklch(38% 0.1 85)",
+          "oklch(49% 0.1 85)",
+          "oklch(61% 0.1 85)",
+          "oklch(72% 0.1 85)",
+          "oklch(84% 0.1 85)",
+          "oklch(95% 0.1 85)"
+        ]
+      },
+      "sand": {
+        "role": "primary",
+        "displayName": "Sand",
+        "tonalRamp": [
+          "oklch(15% 0.05 80)",
+          "oklch(26% 0.05 80)",
+          "oklch(38% 0.05 80)",
+          "oklch(49% 0.05 80)",
+          "oklch(61% 0.05 80)",
+          "oklch(72% 0.05 80)",
+          "oklch(84% 0.05 80)",
+          "oklch(95% 0.05 80)"
+        ]
+      },
+      "olive": {
+        "role": "secondary",
+        "displayName": "Olive",
+        "tonalRamp": [
+          "oklch(15% 0.065 155)",
+          "oklch(26% 0.065 155)",
+          "oklch(38% 0.065 155)",
+          "oklch(49% 0.065 155)",
+          "oklch(61% 0.065 155)",
+          "oklch(72% 0.065 155)",
+          "oklch(84% 0.065 155)",
+          "oklch(95% 0.065 155)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Latin statement",
+        "purpose": "English home statement; phone override is recorded in DESIGN.md."
+      },
+      "display-ar": {
+        "displayName": "Arabic statement",
+        "purpose": "Amiri heading with no tracking."
+      },
+      "body": {
+        "displayName": "Reading body",
+        "purpose": "Plex running text, limited to 70ch in articles."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "state-transition",
+        "value": ".15s ease-out",
+        "purpose": "Link color and primary/disclosure background changes."
+      },
+      {
+        "name": "disclosure-turn",
+        "value": ".2s ease-out",
+        "purpose": "Native disclosure chevron rotation."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet",
+        "value": "900px"
+      },
+      {
+        "name": "phone",
+        "value": "600px"
+      }
+    ],
+    "tonalRampPolicy": "Synthesized OKLCH ramps are panel visualization metadata only. Shipped colors are the DESIGN.md primitives.",
+    "reducedMotion": "prefers-reduced-motion: reduce removes transitions and animations and sets scroll-behavior to auto.",
+    "focus": "2px solid var(--olive), outline-offset: 6px",
+    "sources": [
+      "site/preview.css",
+      "site/preview.js",
+      "scripts/build_preview.py",
+      "assets/README.md",
+      "assets/fonts/provenance.json"
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "action-primary",
+      "description": "Sand action for the next reading step.",
+      "html": "<a class=\"ds-primary\" href=\"#checks\">Start with the checks</a>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;gap:16px;padding:11px 19px;background:var(--sand,#cbb896);border:1px solid var(--sand,#cbb896);color:var(--paper,#000);font:500 1rem/1.5 Plex,Arial,sans-serif;text-decoration:none;transition:background .15s ease-out}.ds-primary:hover{background:var(--ink,#fff);color:var(--paper,#000)}.ds-primary:focus-visible{outline:2px solid var(--olive,#7fae8d);outline-offset:6px}@media(prefers-reduced-motion:reduce){*{transition:none!important}}"
+    },
+    {
+      "name": "Copy action",
+      "kind": "button",
+      "refersTo": "action-copy",
+      "description": "Outlined copy control; application copy behavior is supplied by site/preview.js.",
+      "html": "<button class=\"ds-copy\" type=\"button\">Copy prompt</button>",
+      "css": ".ds-copy{background:transparent;border:1px solid var(--sand,#cbb896);color:var(--sand,#cbb896);padding:6px 13px;font:400 1rem/1.4 Plex,Arial,sans-serif;cursor:pointer}.ds-copy:hover{background:var(--sand,#cbb896);color:var(--paper,#000)}.ds-copy:disabled{cursor:default;color:var(--olive,#7fae8d);border-color:var(--olive,#7fae8d)}.ds-copy:focus-visible{outline:2px solid var(--olive,#7fae8d);outline-offset:6px}@media(prefers-reduced-motion:reduce){*{transition:none!important}}"
+    },
+    {
+      "name": "Checklist disclosure",
+      "kind": "custom",
+      "refersTo": "checklist-row",
+      "description": "Native disclosure with an explicit finish condition.",
+      "html": "<details class=\"ds-check\"><summary><span>Backup</span><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"m6 9 6 6 6-6\"/></svg></summary><p><span>What counts as finished</span><br>A recent backup exists and a harmless test file can be recovered.</p></details>",
+      "css": ".ds-check{font:400 1rem/1.8 Plex,Arial,sans-serif;color:var(--text,#cfcfcb);border-block:1px solid var(--rule,#303030)}.ds-check summary{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:23px 0;list-style:none;cursor:pointer;transition:background .15s ease-out}.ds-check summary::-webkit-details-marker{display:none}.ds-check summary>span{font-size:1.14rem;font-weight:500;color:var(--ink,#fff)}.ds-check summary:hover{background:var(--surface,#0c0c0c)}.ds-check svg{width:18px;height:18px;color:var(--sand,#cbb896);transition:transform .2s ease-out}.ds-check[open] svg{transform:rotate(180deg)}.ds-check p{font-size:.9rem;margin:0;padding-bottom:25px}.ds-check p span{color:var(--olive,#7fae8d);font-size:.84rem}.ds-check summary:focus-visible{outline:2px solid var(--olive,#7fae8d);outline-offset:6px}@media(prefers-reduced-motion:reduce){*{transition:none!important}}"
+    },
+    {
+      "name": "Guide link",
+      "kind": "nav",
+      "refersTo": "guide-link",
+      "description": "A ruled row leading to a longer guide.",
+      "html": "<a class=\"ds-guide\" href=\"#accounts\"><div><strong>Accounts</strong><span>Email, MFA and signed-in sessions</span></div><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M5 12h14m-6-6 6 6-6 6\"/></svg></a>",
+      "css": ".ds-guide{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:19px 0;border-bottom:1px solid var(--rule,#303030);color:var(--ink,#fff);font:400 1rem/1.8 Plex,Arial,sans-serif;text-decoration:none}.ds-guide span{display:block;font-size:.85rem;color:var(--mute,#a4a49f)}.ds-guide strong{font-weight:500}.ds-guide svg{width:18px;height:18px;flex:none;color:var(--sand,#cbb896)}.ds-guide:hover strong{color:var(--sand,#cbb896)}.ds-guide:focus-visible{outline:2px solid var(--olive,#7fae8d);outline-offset:6px}@media(prefers-reduced-motion:reduce){*{transition:none!important}}"
+    },
+    {
+      "name": "Locale navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Quiet text navigation with a script-aware locale divider.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a href=\"#guides\">Guides</a><a href=\"#sources\">Sources</a><a class=\"ds-locale\" href=\"#arabic\" lang=\"ar\" hreflang=\"ar\">العربية</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:28px;font:400 .9rem/1.8 Plex,Arial,sans-serif}.ds-nav a{color:var(--sand,#cbb896);text-decoration:none;transition:color .15s ease-out}.ds-nav a:hover{color:var(--ink,#fff)}.ds-nav a[aria-current]{color:var(--ink,#fff)}.ds-nav .ds-locale{padding-inline-start:26px;border-inline-start:1px solid var(--rule,#303030);font:400 1.05rem/1.8 Amiri,serif;letter-spacing:0}.ds-nav a:focus-visible{outline:2px solid var(--olive,#7fae8d);outline-offset:6px}@media(prefers-reduced-motion:reduce){*{transition:none!important}}"
+    },
+    {
+      "name": "Prompt container",
+      "kind": "custom",
+      "refersTo": "prompt-container",
+      "description": "Bounded copyable text on the only recurring filled reading panel.",
+      "html": "<section class=\"ds-prompt\"><header>Copyable starting prompt</header><pre>Start with a read-only audit.\nShow what was checked and what remains unknown.</pre></section>",
+      "css": ".ds-prompt{background:var(--surface,#0c0c0c);border:1px solid var(--rule,#303030);color:var(--text,#cfcfcb)}.ds-prompt header{padding:13px 19px;border-bottom:1px solid var(--rule,#303030);font:400 .82rem/1.8 Plex,Arial,sans-serif;color:var(--mute,#a4a49f)}.ds-prompt pre{margin:0;padding:20px 23px;white-space:pre-wrap;overflow-wrap:anywhere;font:400 .84rem/1.85 ui-monospace,SFMono-Regular,monospace}@media(prefers-reduced-motion:reduce){*{transition:none!important}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Bilingual Editorial Register",
+    "overview": "A bilingual editorial register, extending the owner’s Nawafith reference through black surfaces, fine rules, serif headings and readable sans serif guidance. Dense information stays calm through clear columns, measured paragraphs and visible completion criteria.\n\nThe custom reading preview and the repository presentation share content and artwork. GitHub controls its own typography and layout; its local approximation is not the custom reading system. Both remain local and unpublished. This document records the implemented system in `site/preview.css`, `site/preview.js` and `scripts/build_preview.py`.",
+    "keyCharacteristics": [
+      "Black reading surface with sand actions and olive verification cues.",
+      "Newsreader Latin headings, Amiri Arabic headings and Plex body text.",
+      "Fine ruled registers, native disclosures and square controls.",
+      "English first, paired Arabic pages and logical RTL spacing."
+    ],
+    "rules": [
+      {
+        "name": "The Ruled Register Rule",
+        "body": "Separate repeated checks and guide links with fine rules and open space. Reserve the filled surface for bounded text such as the copyable prompt.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Scripts Rule",
+        "body": "Use the appropriate display face for each script, preserve Arabic shaping and apply no Arabic tracking.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Reading Rule",
+        "body": "Use borders, tone and spacing for hierarchy. The custom reading surface uses no shadows.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use logical inline spacing and paired language links.",
+      "Do keep finish criteria visible inside each expanded check.",
+      "Do retain keyboard focus, native disclosure behavior and a manual copy fallback.",
+      "Do keep font licenses and artwork provenance with redistributed assets.",
+      "Do treat GitHub previews as approximate and publication as a separate approval."
+    ],
+    "donts": [
+      "Don't apply Latin letter spacing to Arabic.",
+      "Don't replace ruled reading registers with decorative card grids.",
+      "Don't imply that the guide scans a device or automatically changes settings.",
+      "Don't put private audit data or identifying material in public assets or documentation.",
+      "Don't use the GitHub approximation’s system display font as the custom reading identity."
+    ]
+  }
+}
